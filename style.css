@@ -1,0 +1,651 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.center{
+    text-align: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+#scrollup{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0 , 0.25);
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+#scrollup:active{
+    background-color: rgb(214, 50, 50);
+}
+
+/* NAVIGATION BAR Logo */
+#logo{
+    margin: 10px 15px;
+}
+
+#logo img{
+    height: 80px;
+    margin:7px 7px;
+    
+}
+
+/* NAVIGATION BAR STYLE */
+
+
+#navigationbar{
+    
+    width: 100%;
+    z-index: 999;
+background-color:rgb(75, 75, 230);
+ position: fixed;
+ display: flex; 
+ align-items: center;
+ justify-content: center;
+}
+#navigation{
+    position: sticky;
+    padding: 15px 0px;
+}
+
+#navigationbar ul{
+    display: flex;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+#navigationbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+  
+   
+}
+#navigationbar ul li a{
+    color: white;
+    display: inline-block;
+     padding: 4px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+}
+#navigationbar ul li a:hover{
+    color:rgb(121, 50, 50);
+    background-color: white;
+}
+
+#navigationbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.max-width{
+    max-width: 1500px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* #navigationbar ::before{
+    content: "";
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+} */
+
+.menu-btn{
+    color: white;
+    font-size: 33px;
+    cursor: pointer;
+    
+}
+  
+
+/* Home  Section style */
+.home{
+    display: flex;
+    background: url("img4.jpeg") no-repeat center center/cover;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+.home-content{
+    margin: 150px 400px 0px 0px;
+}
+
+.home .home-content h1{
+    font-family: 'Ubuntu Condensed', sans-serif;
+ font-size: 35px;
+ font-weight:300 ;
+}
+.home .home-content h2{
+    font-family: 'Ubuntu Condensed', sans-serif;
+ font-size: 80px;
+ font-weight: 500;
+}
+.home .home-content div{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 46px;
+    font-weight:600 ;
+}
+.home .home-content span{
+    color: white;
+}
+
+
+/* Education section */
+
+.education{
+    padding: 100px 0px;
+   
+}
+.education .firstheading{
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+
+}
+.education .firstheading::before{
+     content: "";
+     position: absolute;
+     bottom: 0px;
+     left: 50%;
+     width: 220px;
+     height: 4px;
+     background:#111;
+     transform: translateX(-50%);
+}
+.education .firstheading::after{
+     content: "";
+     position: absolute;
+     font-size: 25px;
+     color: crimson;
+     bottom: -12px;
+     left: 50%;
+     padding:5px;
+     background:#fff;
+     transform: translateX(-50%);
+}
+
+.education .education-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.education .education-section .left{
+    width: 45%;
+}
+.education .education-section .right{
+    width: 55%;
+}
+.education .education-section .right .text{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 10px;
+   
+}
+.education .education-section .right .text span{
+color: crimson;
+}
+.education .education-section .right p{
+    text-align: justify;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.education .education-section .right p .heading{
+    text-align: justify;
+    font-size: 25px;
+    color: blue;
+}
+.education .education-section .right a{
+    text-align: justify;
+    background: crimson;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    display: inline-block;
+     padding: 10px 37px;
+     margin-top: 20px;
+    border-radius: 9px;
+   transition: all 0.2s ease;
+   border: 2px solid crimson;
+
+}
+.education .education-section .right a:hover{
+   color: crimson;
+   background: none;
+}
+.education .education-section .left{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* EDUCATION SECTION IMAGE */
+.education .education-section .columnleft img{
+
+    margin-right: 10px;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+
+
+/* Career objective */
+
+.Career  .max-width .carousel .cardboard .box div{
+    margin-top: 160px;
+    font-size: 30px;
+    color:rgb(204, 188, 188);
+}
+
+.Career{
+    background: url("Career.jpeg") no-repeat center center/cover;
+    
+    height: 650px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.Career .firstheading::before{
+content: "";
+position: absolute;
+bottom: 0px;
+left: 50%;
+width: 270px;
+height: 4px;
+background:white;
+transform: translateX(-50%);
+}
+.Career .firstheading::after{
+    content: " ";
+    position: absolute;
+    font-size: 25px;
+    color: crimson;
+    bottom: -12px;
+    left: 50%;
+    padding:5px;
+    background:#fff;
+    transform: translateX(-50%);
+ 
+}
+.Career .firstheading{
+    
+    color: white;
+position: relative;
+margin-bottom: 20px;
+padding-bottom: 35px;
+font-size: 44px;
+font-weight: 600;
+text-align: center;
+font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+
+
+
+
+
+/* services section */
+.services{
+    height: 620px;
+    color: white;
+    background: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.services .firstheading::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 220px;
+    height: 3px;
+    background:#111;
+    transform: translateX(-50%);
+}
+
+.services .firstheading::after{
+    content: "who i am";
+    position: absolute;
+    font-size: 20px;
+    color: red;
+    bottom: -12px;
+    left: 50%;
+    padding:5px;
+    background:#fff;
+    transform: translateX(-50%);
+}
+
+.services  .firstheading{
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+    font-size: 38px;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+
+}
+
+.services .firstheading::after{
+    content: "";
+    background: black;
+}
+.services .firstheading::before{
+    background: white;
+}
+.services .services-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services .services-section .card{
+    width:calc(33% -  20px);
+    background: rgb(36, 35, 35);
+    text-align: center;
+    border-radius: 6px;
+    height: 333px;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+
+.services .services-section .card:hover{
+    background:rgb(75, 75, 230);
+}
+.services .services-section .card .text{
+    font-size: 40px;
+    
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    margin: 10px 0px 7px 0px;
+}
+.services .services-section .card .box p{
+    margin: 9px 0px;
+}
+.services .services-section .card:hover .box{
+    transform:scale(1.05);
+}
+.services .services-section .card .box{
+    transition: all 0.3s ease;
+}
+.services .services-section .card {
+    display: flex;
+    
+    justify-content: center;
+}
+
+
+
+/* skills section */
+.skills  {
+    font-family: 'Ubuntu', sans-serif;
+    height: 500px;
+   
+}
+.skills .skills-container .column{
+    
+    width:calc(50% - 20px);
+    margin-right: 20px;
+}
+.skills .skills-container , .contact .contact-section{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.skills .firstheading::before,  .contact .firstheading::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 270px;
+    height: 4px;
+    background:#111;
+    transform: translateX(-50%);
+}
+
+.skills .firstheading::after,  .contact .firstheading::after{
+    content: " ";
+    position: absolute;
+    font-size: 25px;
+    color: crimson;
+    bottom: -12px;
+    left: 50%;
+    padding:5px;
+    background:#fff;
+    transform: translateX(-50%);
+}
+
+.skills .firstheading ,  .contact .firstheading{
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 35px;
+    font-size: 44px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.skills .skills-container .left .text, .skills .skills-container .right .text{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.skills .skills-container .left p{
+    text-align: justify;
+}
+
+.skills .skills-container .left a{
+    text-align: justify;
+    background: crimson;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    display: inline-block;
+     padding: 6px 15px;
+     margin-top: 15px;
+    border-radius: 9px;
+   transition: all 0.2s ease;
+   border: 2px solid crimson;
+}
+.skills .skills-container .left a:hover{
+    background:none;
+    color: crimson;
+}
+
+ .skills .skills-container .right .bars{
+     margin-bottom: 15px;
+ }
+ .skills .skills-container .right .info{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .skills .skills-container .right span{
+     font-weight: 600;
+     font-size: 18px;
+ }
+ .skills .skills-container .right .line{
+     height: 5px;
+     width: 100%;
+     background: lightgray;
+     position: relative;
+ }
+
+ .skills .skills-container .right .line::before{
+     content: "";
+     position: absolute;
+     height: 100%;
+     width: 80%;
+     left: 0px;
+     top: 0px;
+     background: blue;
+
+ }
+  .skills .skills-container .right .html::before{
+     width: 95%;
+ }
+  .skills .skills-container .right .css::before{
+     width: 95%;
+ }
+  .skills .skills-container .right .js::before{
+     width: 40%;
+ }
+  .skills .skills-container .right .c-language::before{
+     width: 50%;
+ }
+  .skills .skills-container .right .Python::before{
+     width: 50%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+/* Contact me section */
+.contact .firstheading::after{
+    content: "";
+}
+.contact{
+    background: url("Contact me.jpg");
+    opacity: 1;
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    height: 700px;
+
+}
+
+.contact .contact-section .column{
+    width: calc(50% - 30px);
+    font-size: 25px;
+}
+.contact .contact-section .left p{
+    text-align: justify;
+}
+.contact .contact-section .text{
+    font-size: 40px;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+.contact .contact-section .left .icons{
+    margin: 10px 0px;
+}
+.contact .contact-section .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-section .row .info{
+    margin-left: 30px;
+   
+}
+.contact .contact-section .row svg{
+    color:red;
+}
+.contact .contact-section .row .info .sub-title{
+    color: rgb(73, 71, 71);
+    margin-bottom: 10px;
+}
+
+/* Contact form */
+/* .contact .right form .inputs{
+    display: flex;
+} */
+.contact .right form .input,
+.contact .right form .inputs .input{
+    height: 45px;
+    width: 100%;
+    margin: 20px 5px;
+}
+.contact .right form .inputs input{
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    outline: none;
+    border: 3px solid black;
+   
+    font-size: 20px;
+  
+}
+.contact .right form .input textarea{
+    height:110px;
+    width: 100%;
+    margin: 11px 5px;
+    border: 3px solid black;
+    border-radius: 7px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact .right form .btn button{
+    margin: 80px 0px ;
+    border-radius: 5px;
+   border: 2px solid black;
+   background-color: rgb(190, 183, 183);
+   padding: 10px 8px;
+   font-size: 19px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+ 
+}
+.contact .right form .btn button:hover{
+    background: rgb(153, 147, 147);
+    color: black;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: black;
+    color: white;
+    height: 60px;
+    padding: 10px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+footer span{
+    color: red;
+    text-decoration: none;
+}
+footer span:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
