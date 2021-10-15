@@ -107,7 +107,11 @@ background-color:rgb(75, 75, 230);
     width: 100%;
     z-index: -1;
     opacity: 0.4;
-} */
+} */\
+
+.menu{
+    margin-left:50px;
+}
 
 .menu-btn{
     color: white;
@@ -158,6 +162,7 @@ background-color:rgb(75, 75, 230);
    
 }
 .education .firstheading{
+    margin-top:20px;
     position: relative;
     margin-bottom: 20px;
     padding-bottom: 30px;
@@ -343,6 +348,7 @@ font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 .services  .firstheading{
+    margin-top:20px;
     position: relative;
     margin-bottom: 20px;
     padding-bottom: 60px;
@@ -447,6 +453,7 @@ font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 .skills .firstheading ,  .contact .firstheading{
+    margin-top:20px;
     position: relative;
     margin-bottom: 20px;
     padding-bottom: 35px;
@@ -632,10 +639,10 @@ font-family: 'Ubuntu Condensed', sans-serif;
 /* Footer */
 
 footer{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     height: 60px;
-    padding: 10px 10px;
+    padding: 10px 10px 5px 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
 }
